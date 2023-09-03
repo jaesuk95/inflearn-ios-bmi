@@ -16,6 +16,7 @@
 		454E0D002AA44D690044FA32 /* BMITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0CFF2AA44D690044FA32 /* BMITests.swift */; };
 		454E0D0A2AA44D690044FA32 /* BMIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0D092AA44D690044FA32 /* BMIUITests.swift */; };
 		454E0D0C2AA44D690044FA32 /* BMIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0D0B2AA44D690044FA32 /* BMIUITestsLaunchTests.swift */; };
+		454E0D192AA454840044FA32 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0D182AA454840044FA32 /* BmiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		454E0D052AA44D690044FA32 /* BMIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		454E0D092AA44D690044FA32 /* BMIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIUITests.swift; sourceTree = "<group>"; };
 		454E0D0B2AA44D690044FA32 /* BMIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		454E0D182AA454840044FA32 /* BmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				454E0CE82AA44D680044FA32 /* AppDelegate.swift */,
 				454E0CEA2AA44D680044FA32 /* SceneDelegate.swift */,
 				454E0CEC2AA44D680044FA32 /* ViewController.swift */,
+				454E0D182AA454840044FA32 /* BmiViewController.swift */,
 				454E0CEE2AA44D680044FA32 /* Main.storyboard */,
 				454E0CF12AA44D690044FA32 /* Assets.xcassets */,
 				454E0CF32AA44D690044FA32 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				454E0CED2AA44D680044FA32 /* ViewController.swift in Sources */,
 				454E0CE92AA44D680044FA32 /* AppDelegate.swift in Sources */,
+				454E0D192AA454840044FA32 /* BmiViewController.swift in Sources */,
 				454E0CEB2AA44D680044FA32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
