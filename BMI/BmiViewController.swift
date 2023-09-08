@@ -15,7 +15,9 @@ class BmiViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     
     // 데이터를 전달 받을 때 '?' optional 추가
-    var bmi: Double?
+    var bmiNumber: Double?
+    var adviceString: String?
+    var bmiColour: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +36,14 @@ class BmiViewController: UIViewController {
         backButton.clipsToBounds = true
         backButton.layer.cornerRadius = 5
         
-        guard let bmi = bmi else {return}
-        bmiNumberLabel.text = String(bmi)
+        guard let bmiNumber = bmiNumber else {return}
+        print(bmiNumber)
+        bmiNumberLabel.text = String(bmiNumber)
+        
+        adviseLabel.text = adviceString
+        bmiNumberLabel.backgroundColor = bmiColour
+//        print(bmiColour)
+//        print(adviseLabel)
     }
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
