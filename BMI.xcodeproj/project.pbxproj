@@ -18,6 +18,7 @@
 		454E0D0C2AA44D690044FA32 /* BMIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0D0B2AA44D690044FA32 /* BMIUITestsLaunchTests.swift */; };
 		454E0D192AA454840044FA32 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0D182AA454840044FA32 /* BmiViewController.swift */; };
 		4581A41E2AAC4E00007C5317 /* BMICalculateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581A41D2AAC4E00007C5317 /* BMICalculateManager.swift */; };
+		4581A4202AAC5D3B007C5317 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581A41F2AAC5D3B007C5317 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		454E0D0B2AA44D690044FA32 /* BMIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		454E0D182AA454840044FA32 /* BmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
 		4581A41D2AAC4E00007C5317 /* BMICalculateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculateManager.swift; sourceTree = "<group>"; };
+		4581A41F2AAC5D3B007C5317 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				4581A41D2AAC4E00007C5317 /* BMICalculateManager.swift */,
+				4581A41F2AAC5D3B007C5317 /* BMI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				454E0CE92AA44D680044FA32 /* AppDelegate.swift in Sources */,
 				454E0D192AA454840044FA32 /* BmiViewController.swift in Sources */,
 				454E0CEB2AA44D680044FA32 /* SceneDelegate.swift in Sources */,
+				4581A4202AAC5D3B007C5317 /* BMI.swift in Sources */,
 				4581A41E2AAC4E00007C5317 /* BMICalculateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,12 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var weightTextField: UITextField!
     
     @IBOutlet weak var calculateButton: UIButton!
-    
-    
-//    var bmi: Double?
-//    var bmiNumber: Double?
-//    var adviceString: String?
-//    var bmiColour: UIColor?
+
     
 
     var bmiManager = BMICalculateManager()
@@ -28,8 +23,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-
         makeUI()
     }
 
@@ -47,13 +40,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-        
-        guard let height = heightTextField.text,
-              let weight = weightTextField.text
-        else {return}
-        
-        bmiManager.calculateBmi(height: height, weight: weight)
-    
+        print(#function)
     }
     
     // 다음 화면으로 넘어가는 것을 허락할지 말지 (만약 다음 페이지가 당연하다면 shouldPerform.. 할 필요가 없다)
@@ -68,7 +55,7 @@ class ViewController: UIViewController {
         return true
     }
 
-    // 데이터 전달
+    // 데이터 전달 (direct Segue)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // segue id = "toBMIVC"
@@ -76,9 +63,7 @@ class ViewController: UIViewController {
             let bmiVC = segue.destination as! BmiViewController
             
             // 계산된 결과값을 다음 화면으로 전달
-            bmiVC.bmiNumber = bmiManager.getBMIResult()
-            bmiVC.bmiColour = bmiManager.getBackgroundColour()
-            bmiVC.adviceString = bmiManager.getBMIAdviceString()
+            bmiVC.bmi = bmiManager.getBMI(height: heightTextField.text!, weight: weightTextField.text!)
 
         }
         
@@ -94,11 +79,7 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-//        if textField == heightTextField {
-//
-//        }
-        
+
         if Int(string) != nil || string == "" {
             return true // 글자 입력을 허용
         }
@@ -128,3 +109,30 @@ extension ViewController: UITextFieldDelegate {
     }
     
 }
+
+
+
+
+
+
+//    var bmi: Double?
+//    var bmiNumber: Double?
+//    var adviceString: String?
+//    var bmiColour: UIColor?
+
+
+//        guard let height = heightTextField.text,
+//              let weight = weightTextField.text
+//        else {return}
+        
+//        bmiManager.(height: height, weight: weight)
+
+//            bmiVC.bmiNumber = bmiManager.getBMIResult()
+//            bmiVC.bmiColour = bmiManager.getBackgroundColour()
+//            bmiVC.adviceString = bmiManager.getBMIAdviceString()
+
+
+
+//        if textField == heightTextField {
+//
+//        }
