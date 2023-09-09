@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct BMICalculateManager {
+class BMICalculateManager {
     
     // save bmi value here
     var bmi: Double?
@@ -19,7 +19,8 @@ struct BMICalculateManager {
     // BMI calculation method
 //    func calculateBmi(height: String, weight: String) -> Double {
     // mutating 속성을 수정하기 때문에 mutate 를 추가한다
-    mutating func calculateBmi(height: String, weight: String) {
+//    mutating func calculateBmi(height: String, weight: String) {
+    func calculateBmi(height: String, weight: String) {
         
         guard let h = Double(height), let w = Double(weight) else {
             bmi = 0.0
